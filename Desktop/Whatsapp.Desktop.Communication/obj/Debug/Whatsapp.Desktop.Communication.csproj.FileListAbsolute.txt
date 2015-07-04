@@ -1,0 +1,10 @@
+C:\Pradeep\Development\GitHub\Local\WhatsAppAPIClient\WhatsAppAPIClientDesktop\MiWavez.Desktop.Communication\bin\Debug\Whatsapp.Desktop.Communication.dll
+C:\Pradeep\Development\GitHub\Local\WhatsAppAPIClient\WhatsAppAPIClientDesktop\MiWavez.Desktop.Communication\bin\Debug\Whatsapp.Desktop.Communication.pdb
+C:\Pradeep\Development\GitHub\Local\WhatsAppAPIClient\WhatsAppAPIClientDesktop\MiWavez.Desktop.Communication\obj\Debug\Whatsapp.Desktop.Communication.csprojResolveAssemblyReference.cache
+C:\Pradeep\Development\GitHub\Local\WhatsAppAPIClient\WhatsAppAPIClientDesktop\MiWavez.Desktop.Communication\obj\Debug\Whatsapp.Desktop.Communication.dll
+C:\Pradeep\Development\GitHub\Local\WhatsAppAPIClient\WhatsAppAPIClientDesktop\MiWavez.Desktop.Communication\obj\Debug\Whatsapp.Desktop.Communication.pdb
+C:\Pradeep\Development\GitHub\Local\WhatsAppAPIClient\WhatsAppAPIClientDesktop\Whatsapp.Desktop.Communication\bin\Debug\Whatsapp.Desktop.Communication.dll
+C:\Pradeep\Development\GitHub\Local\WhatsAppAPIClient\WhatsAppAPIClientDesktop\Whatsapp.Desktop.Communication\bin\Debug\Whatsapp.Desktop.Communication.pdb
+C:\Pradeep\Development\GitHub\Local\WhatsAppAPIClient\WhatsAppAPIClientDesktop\Whatsapp.Desktop.Communication\obj\Debug\Whatsapp.Desktop.Communication.csprojResolveAssemblyReference.cache
+C:\Pradeep\Development\GitHub\Local\WhatsAppAPIClient\WhatsAppAPIClientDesktop\Whatsapp.Desktop.Communication\obj\Debug\Whatsapp.Desktop.Communication.dll
+C:\Pradeep\Development\GitHub\Local\WhatsAppAPIClient\WhatsAppAPIClientDesktop\Whatsapp.Desktop.Communication\obj\Debug\Whatsapp.Desktop.Communication.pdb

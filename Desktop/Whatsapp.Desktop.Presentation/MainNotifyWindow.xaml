@@ -1,0 +1,86 @@
+﻿<!--
+// Author:   Murray Foxcroft - April 2009
+// Comments: The primary WPF window that launches on startup 
+-->
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Whatsapp.Desktop.Presentation"
+    x:Class="Whatsapp.Desktop.Presentation.MainNotifyWindow" x:Name="uiMainNotifyWindow"
+    Title="" Height="350" Width="250"
+    ShowInTaskbar="False"
+    WindowStyle="None" 
+    AllowsTransparency="True" 
+    ResizeMode="NoResize"
+    Background="Transparent"
+    MouseEnter="uiWindowMainNotification_MouseEnter"
+    MouseLeave="uiWindowMainNotification_MouseLeave" 
+    Visibility="Visible" 
+    Topmost="True" 
+    BorderThickness="1" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+    <Window.Resources>
+        <Storyboard x:Key="gridFadeInStoryBoard">
+            <DoubleAnimation Storyboard.TargetName="uiGridMain" BeginTime="0:0:0.1"
+                Storyboard.TargetProperty="Opacity" From="0.00" To="1.00" AutoReverse="False" Duration="0:0:0.3" />
+        </Storyboard>
+        <Storyboard x:Key="gridFadeOutStoryBoard">
+            <DoubleAnimation Storyboard.TargetName="uiGridMain" BeginTime="0:0:1.3"
+                Storyboard.TargetProperty="Opacity" From="1.00" To="0.00" AutoReverse="False" Duration="0:0:0.3" />
+        </Storyboard>
+    </Window.Resources>
+    <Border>
+        <Grid x:Name="uiGridMain" Margin="10">
+            <Border Width="Auto" Height="Auto"> <!--Style="{StaticResource MainGridBorder}">-->
+            </Border>
+            <Grid Margin="5,0,12,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"/>
+                    <RowDefinition Height="18" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="36" />
+                    <ColumnDefinition Width="42" />
+                </Grid.ColumnDefinitions>
+                <local:SlickToggleButton x:Name="PinButton" Style="{StaticResource SlickButton}" HighlightBackground="Blue" PressedBackground="DarkBlue" Grid.Column="1" Grid.Row="1" FontWeight="Bold" Click="PinButton_Click">
+                    <Image x:Name="PinImage" Source="pack://application:,,/Images/Un-Pinned.png" Stretch="None"/>
+                </local:SlickToggleButton>
+                <local:SlickToggleButton x:Name="CloseButton" Style="{StaticResource SlickButton}" HighlightBackground="Blue" Content="X" Click="CloseButton_Click" Grid.Row="1" FontWeight="Bold" Foreground="#FFFFFFFF" Grid.Column="2" />
+            </Grid>
+            <Grid x:Name="NotificationContent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="44"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="44"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <local:HorizontalSeparator d:LayoutOverrides="HorizontalAlignment" Grid.Row="1"/>
+                <local:HorizontalSeparator x:Name="bottomPanel" d:LayoutOverrides="HorizontalAlignment" Grid.Row="5" Visibility="Visible"/>
+                <Label Margin="5,3.395,79,15" x:Name="TitleLabel" Foreground="White" Opacity="0.9" Content="{Binding Path=WindowTitle}"/>
+                <ListBox x:Name="lvMessages" Grid.Row="1" ItemsSource="{Binding Path=Messages}"  Background="#ffebeae5" IsTextSearchEnabled="False" Foreground="Black" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Padding="2">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Column="0" Text="{Binding FromUser}" FontWeight="Bold" />
+                                <TextBlock Grid.Column="1" Text=":" FontWeight="Bold" />
+                                <TextBlock Grid.Column="2" Text="{Binding Text}" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <StackPanel x:Name="pnlTwoWay" FlowDirection="LeftToRight" Orientation="Horizontal" Margin="5,5,5,5" Grid.Row="2" Grid.ColumnSpan="2" Visibility="Visible">
+                    <TextBox x:Name="txtReply" Width = "179" HorizontalAlignment="Left"/>
+                    <Button x:Name="btnReply" Content="Send" Width="39" Background="DarkBlue" Foreground="White"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,93 @@
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Presentation.exe
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Presentation.pdb
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Business.dll
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Business.pdb
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.csprojResolveAssemblyReference.cache
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MainWindow.baml
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MainWindow.g.cs
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\App.g.cs
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation_MarkupCompile.cache
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.g.resources
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.Properties.Resources.resources
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.csproj.GenerateResource.Cache
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.exe
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.pdb
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation_MarkupCompile.lref
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Communication.dll
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\agsXMPP.dll
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Communication.pdb
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\agsXMPP.xml
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\Login.baml
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\Login.g.cs
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.exe
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Presentation.exe
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Presentation.pdb
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Business.dll
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\agsXMPP.dll
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Communication.dll
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Business.pdb
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\agsXMPP.xml
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Communication.pdb
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\Login.baml
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\Login.g.cs
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MainWindow.g.cs
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\App.g.cs
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation_MarkupCompile.cache
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation_MarkupCompile.lref
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MainWindow.baml
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.g.resources
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.Properties.Resources.resources
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.pdb
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Presentation.exe
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Presentation.pdb
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Business.dll
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\bin\Debug\agsXMPP.dll
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Communication.dll
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Business.pdb
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\bin\Debug\agsXMPP.xml
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Communication.pdb
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\Login.baml
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\Login.g.cs
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MainWindow.g.cs
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\App.g.cs
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation_MarkupCompile.cache
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation_MarkupCompile.lref
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MainWindow.baml
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.g.resources
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.Properties.Resources.resources
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.exe
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.pdb
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Presentation.exe
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Presentation.pdb
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\ErrorLogger.dll
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\ExtendedWindowsControls.dll
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Business.dll
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Communication.dll
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\agsXMPP.dll
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Business.pdb
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\MiWavez.Desktop.Communication.pdb
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.csprojResolveAssemblyReference.cache
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\Login.baml
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\App.baml
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\Login.g.cs
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MainWindow.g.cs
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\App.g.cs
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation_MarkupCompile.cache
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation_MarkupCompile.lref
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MainWindow.baml
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.g.resources
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.Properties.Resources.resources
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.csproj.GenerateResource.Cache
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.exe
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\obj\x86\Debug\MiWavez.Desktop.Presentation.pdb
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Presentation\bin\Debug\ErrorLogger.pdb

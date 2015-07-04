@@ -1,0 +1,32 @@
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Business.dll
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Business.pdb
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Business\obj\Debug\MiWavez.Desktop.Business.dll
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Business\obj\Debug\MiWavez.Desktop.Business.pdb
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Business\obj\Debug\MiWavez.Desktop.Business.csprojResolveAssemblyReference.cache
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\agsXMPP.dll
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Communication.dll
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Communication.pdb
+D:\Workspace\Praveen\Development\Mi Wavez\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\agsXMPP.xml
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Business.dll
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Business.pdb
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Communication.dll
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Communication.pdb
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\agsXMPP.xml
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Business\obj\Debug\ResolveAssemblyReference.cache
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Business\obj\Debug\MiWavez.Desktop.Business.dll
+E:\Workspace\Pradeep\Projects\MiWavez_Desktop\Source\Desktop\MiWavez.Desktop.Business\obj\Debug\MiWavez.Desktop.Business.pdb
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Business.dll
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Business.pdb
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Communication.dll
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Communication.pdb
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Business\bin\Debug\agsXMPP.xml
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Business\obj\Debug\ResolveAssemblyReference.cache
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Business\obj\Debug\MiWavez.Desktop.Business.dll
+D:\Workspace\Pradeep\MiWavez\Source\MiWavez.Desktop\MiWavez.Desktop.Business\obj\Debug\MiWavez.Desktop.Business.pdb
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Business.dll
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Business.pdb
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Communication.dll
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Business\bin\Debug\MiWavez.Desktop.Communication.pdb
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Business\obj\Debug\MiWavez.Desktop.Business.csprojResolveAssemblyReference.cache
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Business\obj\Debug\MiWavez.Desktop.Business.dll
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Business\obj\Debug\MiWavez.Desktop.Business.pdb

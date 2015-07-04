@@ -1,0 +1,5 @@
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Communication\bin\x64\Release\MiWavez.Desktop.Communication.dll
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Communication\bin\x64\Release\MiWavez.Desktop.Communication.pdb
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Communication\obj\x64\Release\ResolveAssemblyReference.cache
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Communication\obj\x64\Release\MiWavez.Desktop.Communication.dll
+D:\Workspace\Pradeep\MiWavez\Source\Desktop\MiWavez.Desktop.Communication\obj\x64\Release\MiWavez.Desktop.Communication.pdb
