@@ -10,3 +10,9 @@ C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Busi
 C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Business\obj\Debug\Whatsapp.Desktop.Business.csprojResolveAssemblyReference.cache
 C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Business\obj\Debug\Whatsapp.Desktop.Business.dll
 C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Business\obj\Debug\Whatsapp.Desktop.Business.pdb
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Business\bin\Debug\Whatsapp.Desktop.Business.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Business\bin\Debug\Whatsapp.Desktop.Business.pdb
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Business\bin\Debug\WhatsAppApi.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Business\obj\Debug\Whatsapp.Desktop.Business.csprojResolveAssemblyReference.cache
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Business\obj\Debug\Whatsapp.Desktop.Business.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Business\obj\Debug\Whatsapp.Desktop.Business.pdb

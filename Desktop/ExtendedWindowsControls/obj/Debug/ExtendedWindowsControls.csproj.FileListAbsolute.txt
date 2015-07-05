@@ -19,3 +19,10 @@ C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\ExtendedWindowsContro
 C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\ExtendedWindowsControls\obj\Debug\ExtendedWindowsControls.csproj.GenerateResource.Cache
 C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\ExtendedWindowsControls\obj\Debug\ExtendedWindowsControls.dll
 C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\ExtendedWindowsControls\obj\Debug\ExtendedWindowsControls.pdb
+E:\Development\Git\Repos\WhatsAppClient\Desktop\ExtendedWindowsControls\bin\Debug\ExtendedWindowsControls.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\ExtendedWindowsControls\bin\Debug\ExtendedWindowsControls.pdb
+E:\Development\Git\Repos\WhatsAppClient\Desktop\ExtendedWindowsControls\obj\Debug\ExtendedWindowsControls.csprojResolveAssemblyReference.cache
+E:\Development\Git\Repos\WhatsAppClient\Desktop\ExtendedWindowsControls\obj\Debug\ExtendedWindowsControls.Properties.Resources.resources
+E:\Development\Git\Repos\WhatsAppClient\Desktop\ExtendedWindowsControls\obj\Debug\ExtendedWindowsControls.csproj.GenerateResource.Cache
+E:\Development\Git\Repos\WhatsAppClient\Desktop\ExtendedWindowsControls\obj\Debug\ExtendedWindowsControls.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\ExtendedWindowsControls\obj\Debug\ExtendedWindowsControls.pdb

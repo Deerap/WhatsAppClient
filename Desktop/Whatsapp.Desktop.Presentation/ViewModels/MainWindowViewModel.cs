@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Whatsapp.Desktop.Business;
 using System.Windows.Data;
 using System.Collections.ObjectModel;
-using System.Windows;
-using System.ComponentModel;
 using System.Collections.Specialized;
 
 namespace Whatsapp.Desktop.Presentation.ViewModels
@@ -18,7 +14,7 @@ namespace Whatsapp.Desktop.Presentation.ViewModels
         
         public MainWindowViewModel()
         {
-            rosterInstance = rsRoster.Instance;
+            rosterInstance = Roster.Instance;
             rosterInstance.PropertyChanged += new System.ComponentModel.PropertyChangedEventHandler(rosterInstance_PropertyChanged);
             rosterInstance.OnRosterMessageReceived += rosterInstance_OnRosterMessageReceived;
         }
@@ -41,14 +37,13 @@ namespace Whatsapp.Desktop.Presentation.ViewModels
             {
                 case "SelectedItem":
                     OnPropertyChanged("Messages");
-                    OnPropertyChanged("IsTwoWay");
                     break;
             }
         }
 
-        private ObservableCollection<rsMessage> _CurrentRosterMessages;
+        private ObservableCollection<Message> _CurrentRosterMessages;
 
-        public ObservableCollection<rsMessage> CurrentRosterMessages
+        public ObservableCollection<Message> CurrentRosterMessages
         {
             get 
             {
@@ -61,9 +56,9 @@ namespace Whatsapp.Desktop.Presentation.ViewModels
             }
         }
 
-        private rsRoster rosterInstance;//private Roster rosterInstance;
+        private Roster rosterInstance;//private Roster rosterInstance;
 
-        public rsRoster RosterInstance
+        public Roster RosterInstance
         {
             get
             {
@@ -80,7 +75,7 @@ namespace Whatsapp.Desktop.Presentation.ViewModels
                 {
                     itemsView.Filter = item =>
                     {
-                        rsItemBase ritem = item as rsItemBase;
+                        RosterItem ritem = item as RosterItem;
                         if (ritem == null) return false;
 
                         return ritem.Name.ToLower().Contains(searchText.ToLower()) || ritem.Messages.Where(m => m.Text.ToLower().Contains(searchText.ToLower())).ToList().Count > 0;
@@ -92,7 +87,7 @@ namespace Whatsapp.Desktop.Presentation.ViewModels
                 if (itemsView.Count > 0)
                 {
                     if (!itemsView.Contains(rosterInstance.SelectedItem))
-                        rosterInstance.SelectedItem = (rsItemBase)itemsView.GetItemAt(0);
+                        rosterInstance.SelectedItem = (RosterItem)itemsView.GetItemAt(0);
                 }
                 else
                     rosterInstance.SelectedItem = null;
@@ -107,7 +102,7 @@ namespace Whatsapp.Desktop.Presentation.ViewModels
             {
                 if (rosterInstance.SelectedItem != null)
                 {
-                    ObservableCollection<rsMessage> currentRosterItemMessages = rosterInstance.SelectedItem.Messages;
+                    ObservableCollection<Message> currentRosterItemMessages = rosterInstance.SelectedItem.Messages;
 
                     CurrentRosterMessages = rosterInstance.SelectedItem.Messages;
 

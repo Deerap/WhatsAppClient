@@ -1,6 +1,6 @@
 ﻿namespace Whatsapp.Desktop.Business.Enumerations
 {
-    public enum MessageDirection : short
+    public enum MessageType : short
     {
         Incoming,
         Outgoing
@@ -10,5 +10,14 @@
     {
         Contact,
         Group
+    }
+
+    public enum MessageStatus : short
+    {
+        None = 0,
+        Sent,
+        DeliveredToServer,
+        DeliveredToClient,
+        ReadByClient
     }
 }

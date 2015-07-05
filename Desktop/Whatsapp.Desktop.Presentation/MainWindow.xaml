@@ -4,8 +4,9 @@
         xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
         xmlns:converters="clr-namespace:Whatsapp.Desktop.Presentation.Converters"
         xmlns:controls="clr-namespace:Whatsapp.Desktop.Presentation.Controls"
+        xmlns:extensions="clr-namespace:Whatsapp.Desktop.Presentation.Controls.Extensions"
         xmlns:watermark="clr-namespace:Whatsapp.Desktop.Presentation.Controls.Watermark"
-        Title="Whatsapp" Height="550" Width="700" Icon="/Whatsapp.Desktop.Presentation;component/Images/app.ico" FontFamily="Segoe UI" Loaded="Window_Loaded"  Closing="Window_Closing" StateChanged="Window_StateChanged">
+        Title="Whatsapp" Height="550" Width="700" Icon="/Whatsapp.Desktop.Presentation;component/Images/appicon.png" FontFamily="Segoe UI" Loaded="Window_Loaded"  Closing="Window_Closing" StateChanged="Window_StateChanged">
 
     <Window.Resources>
         <Style x:Key="hideHeaderStyle" TargetType="{x:Type GridViewColumnHeader}">
@@ -27,12 +28,19 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
+        
+        
+        
         <converters:DateToStringConverter x:Key="dateToStringConverter" />
         <converters:IntegerToVisibilityConverter x:Key="integerToVisibilityConverter" />
         <converters:IntegerToFontWeightConverter x:Key="integerToFontWeightConverter" />
         <converters:BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter" />
         <converters:ReverseBooleanToVisibilityConverter x:Key="reverseBooleanToVisibilityConverter" />
+        <converters:MessageTypeToColorBrushConverter x:Key="messageTypeToColorBrushConverter" />
+        <converters:MessageTypeToCornerRadiusConverter x:Key="messageTypeToCornerRadiusConverter"/>
+        <converters:MessageTypeToMarginThicknessConverter x:Key="messageTypeToMarginThicknessConverter"/>
+        <converters:MessageTypeToBorderThicknessConverter x:Key="messageTypeToBorderThicknessConverter"/>
+        <converters:MessageTypeToVisibilityConverter x:Key="messageTypeToVisibilityConverter"/>
         <converters:StringToXamlConverter x:Key="stringToXamlConverter" />
     </Window.Resources>
     <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
@@ -60,7 +68,8 @@
                             <TextBlock Margin="0" Padding="0" VerticalAlignment="Center">Search</TextBlock>
                         </watermark:WatermarkService.Watermark>
                     </TextBox>
-                    <Button x:Name="cmdClear"  Grid.Column="1" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Visibility="{Binding Path=InSearchMode, Converter={StaticResource booleanToVisibilityConverter}}" Click="cmdClear_Click">
+                    <Button x:Name="cmdClear"  Grid.Column="1" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" 
+                            Visibility="{Binding Path=InSearchMode, Converter={StaticResource booleanToVisibilityConverter}}" Click="cmdClear_Click">
                         <Button.Content>
                             <Image Margin="2" Width="16" Source="Images/delete.png" />
                         </Button.Content>
@@ -69,9 +78,9 @@
 
                 </Grid>
             </Border>
-            <ListView Grid.Row="1"  Name="lvwRoster" SizeChanged="lvwRoster_SizeChanged" 
+            <ListView Grid.Row="1"  Name="lvwRoster" SizeChanged="lvwRoster_SizeChanged" ScrollViewer.CanContentScroll="True"
                       ItemsSource="{Binding Path = Items}"
-                      SelectedItem="{Binding Path= rsRoster.Instance.SelectedItem, Mode=TwoWay}" BorderBrush="DarkCyan" BorderThickness="0 1 0 1">
+                      SelectedItem="{Binding Path= RosterInstance.SelectedItem, Mode=TwoWay}" BorderBrush="DarkCyan" BorderThickness="0 1 0 1">
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -88,12 +97,9 @@
                                                 <ColumnDefinition Width="50"/>
                                                 <ColumnDefinition/>
                                             </Grid.ColumnDefinitions>
-                                            <!--<Border BorderBrush="#FF1db0ed" BorderThickness="0" CornerRadius="100" Padding="0" Margin="4" Background="White">
-                                                <Image Grid.Column="0"  Margin="1" Width="48" Source="{Binding AvatarPreviewURL}" Stretch="Uniform" VerticalAlignment="Center" />
-                                            </Border>-->
                                             <Rectangle RadiusX="20" RadiusY="20">
                                                 <Rectangle.Fill>
-                                                    <ImageBrush x:Name="rosterMainAvatar" ImageSource="{Binding Path = AvatarPreviewURL, Mode=TwoWay}"></ImageBrush>
+                                                    <ImageBrush x:Name="rosterMainAvatar" ImageSource="{Binding Path = AvatarPreviewURL}"></ImageBrush>
                                                 </Rectangle.Fill>
                                             </Rectangle>
                                             <Grid Grid.Column="1" Margin="2" HorizontalAlignment="Stretch">
@@ -106,22 +112,32 @@
                                                         <ColumnDefinition />
                                                         <ColumnDefinition Width="50"/>
                                                     </Grid.ColumnDefinitions>
-                                                    <!--<controls:SearchableTextBlock Text="{Binding Name, Mode=TwoWay}" VerticalAlignment="Top" FontWeight="{Binding UnreadCount, Converter={StaticResource integerToFontWeightConverter}}" SearchText="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Window}, Path=DataContext.SearchText}" />-->
-                                                    <controls:SearchableTextBlock Text="{Binding Name, Mode=TwoWay}" VerticalAlignment="Top" SearchText="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Window}, Path=DataContext.SearchText}" />
-                                                    <!--<TextBlock Grid.Column="1" Text="{Binding Status, Converter={StaticResource dateToStringConverter}}" Foreground="#FF0083c7" FontSize="10" TextAlignment="Right"/>-->
-                                                    <!--<TextBlock Grid.Column="1" Text="{Binding Presence, Mode =TwoWay}" Foreground="#FF0083c7" FontSize="10" TextAlignment="Right"/>-->
+                                                    <controls:SearchableTextBlock Text="{Binding Path = Name}" VerticalAlignment="Top" SearchText="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Window}, Path=DataContext.SearchText}" />
+                                                    <TextBlock Grid.Column="1" Text="{Binding Path = Presence}" Foreground="#FF0083c7" FontSize="10" TextAlignment="Right"/>
                                                 </Grid>
                                                 <Grid Grid.Row="1" HorizontalAlignment="Stretch">
                                                     <Grid.ColumnDefinitions>
                                                         <ColumnDefinition />
                                                         <ColumnDefinition Width="50" />
                                                     </Grid.ColumnDefinitions>
-                                                    <TextBlock Text="{Binding Message}" VerticalAlignment="Top" FontSize="11" Foreground="Gray" TextWrapping="Wrap" TextTrimming="CharacterEllipsis"/>
+                                                    <TextBlock Text="{Binding Path=Message.Text}" VerticalAlignment="Top" FontSize="11" Foreground="Gray" TextWrapping="Wrap" TextTrimming="CharacterEllipsis"/>
                                                     <!--<Border Grid.Column="1" BorderBrush="#FFf1831f" BorderThickness="0" CornerRadius="2" Background="#FFf1831f" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="{Binding UnreadCount, Converter={StaticResource integerToVisibilityConverter}}">
                                                         <Grid VerticalAlignment="Top">
-                                                            <TextBlock Text="{Binding UnreadCount}" FontSize="10" Foreground="White" VerticalAlignment="Top" TextAlignment="Center" Padding="2" MinWidth="16"/>
+                                                            <TextBlock Text="10" FontSize="10" Foreground="White" VerticalAlignment="Top" TextAlignment="Center" Padding="2" MinWidth="16"/>
                                                         </Grid>
                                                     </Border>-->
+                                                </Grid>
+                                                <Grid Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" Visibility="{Binding Path=Message.MessageType,Converter={StaticResource messageTypeToVisibilityConverter} }">
+                                                    <Grid.Resources>
+                                                        <converters:SwitchConverter x:Key="msgStatusIcon">
+                                                            <converters:SwitchConverterCase When="Sent" Then="Images/msg_unsent.png" />
+                                                            <converters:SwitchConverterCase When="DeliveredToServer" Then="Images/msg_deliveredserver.png" />
+                                                            <converters:SwitchConverterCase When="DeliveredToClient" Then="Images/msg_deliveredclient.png" />
+                                                        </converters:SwitchConverter>
+                                                    </Grid.Resources>
+                                                    <!--<TextBlock Text="{Binding MessageStatus, Converter={StaticResource MessageStatusToTextConverter}}" FontSize="10" Foreground="Gray" FontWeight="Bold" VerticalAlignment="Top" TextAlignment="Center" 
+                                                               Padding="2" MinWidth="16" HorizontalAlignment="Right"/>-->
+                                                    <Image Source="{Binding Message.MessageStatus, Converter={StaticResource msgStatusIcon}}" VerticalAlignment="Center" HorizontalAlignment="Right" Width="15" Height="10" Stretch="Uniform"/>
                                                 </Grid>
                                             </Grid>
                                         </Grid>
@@ -133,10 +149,22 @@
                 </ListView.View>
             </ListView>
             <Grid Grid.Row="2">
-                <Button HorizontalContentAlignment="Stretch" HorizontalAlignment="Left" VerticalAlignment="Stretch" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="9*"></ColumnDefinition>
+                    <ColumnDefinition Width="5"></ColumnDefinition>
+                    <ColumnDefinition Width="9*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Name="btnAddContact" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnAddContact_Click" >
                     <Grid HorizontalAlignment="Left" VerticalAlignment="Stretch">
-                        <Image Source="Images/add.png" HorizontalAlignment="Left" Width="16" Height="16" Margin="8,0,0,0"></Image>
-                        <TextBlock Text="Backup" Margin="30,0,6,0" HorizontalAlignment="Left"></TextBlock>
+                        <Image Source="Images/add_person_gray.png" HorizontalAlignment="Left" Width="30" Height="30" Margin="8,0,0,0"></Image>
+                        <TextBlock Text="Add" Margin="50,0,6,0" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+                    </Grid>
+                </Button>
+                <Separator Grid.Column="1" Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
+                <Button Name="btnRemoveContact" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnRemoveContact_Click" Grid.Column="2" >
+                    <Grid HorizontalAlignment="Left" VerticalAlignment="Stretch">
+                        <Image Source="Images/ic_menu_delete.png" HorizontalAlignment="Left" Width="30" Height="30" Margin="8,0,0,0"></Image>
+                        <TextBlock Text="Remove" Margin="50,0,6,0" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
                     </Grid>
                 </Button>
             </Grid>
@@ -149,45 +177,62 @@
                 <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
             <Border BorderBrush="#FF0e4964" BorderThickness="0 0 0 1">
-                <Grid>
-                    <Grid.Background>
-                        <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
-                            <GradientStop Color="DarkCyan" Offset="0"/>
-                            <GradientStop Color="DarkCyan" Offset="0.9"/>
-                        </LinearGradientBrush>
-                    </Grid.Background>
+                <Grid Background="#075E55">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="60"></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <!--<Border BorderBrush="#FF1db0ed" BorderThickness="0" CornerRadius="100" Padding="0" Margin="4" Background="White">
-                        <Image VerticalAlignment="Center" HorizontalAlignment="Center" Width="48" Height="48" Source="{Binding Path=rsRoster.SelectedItem.AvatarPreviewURL}" Stretch="Uniform" ></Image>
+                        <Image VerticalAlignment="Center" HorizontalAlignment="Center" Width="48" Height="48" Source="{Binding Path=Roster.SelectedItem.AvatarPreviewURL}" Stretch="Uniform" ></Image>
                     </Border>-->
                     <Rectangle RadiusX="20" RadiusY="20">
                         <Rectangle.Fill>
                             <ImageBrush x:Name="chatMainAvatar" 
-                                        ImageSource="{Binding Path = rsRoster.Instance.SelectedItem.AvatarPreviewURL, Mode=TwoWay}"></ImageBrush>
+                                        ImageSource="{Binding Path = RosterInstance.SelectedItem.AvatarPreviewURL, Mode=TwoWay}"></ImageBrush>
                         </Rectangle.Fill>
                     </Rectangle>
                     <Grid Grid.Column="1">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="30"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
                             <RowDefinition></RowDefinition>
                         </Grid.RowDefinitions>
-                        <TextBlock Text="{Binding rsRoster.Instance.SelectedItem.Name, Mode=TwoWay}" Margin="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontSize="14" FontWeight="Medium" Foreground="White">
+                        <TextBlock Text="{Binding RosterInstance.SelectedItem.Name}" Margin="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontSize="14" FontWeight="Medium" Foreground="White">
                         </TextBlock>
-                        <TextBlock Text="{Binding rsRoster.Instance.SelectedItem.Status, Mode=TwoWay}" Margin="4,27,4,3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontSize="12" Foreground="White" Grid.RowSpan="2"/>
+                        <TextBlock Text="{Binding RosterInstance.SelectedItem.Status}" Margin="4,27,4,3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontSize="12" Foreground="White" Grid.RowSpan="2"/>
+
+                        <!--<TextBlock Text="{Binding RosterInstance.SelectedItem.Status}" Margin="4,27,4,3"  VerticalAlignment="Stretch"  HorizontalAlignment="Stretch" FontSize="12" Foreground="White" Grid.RowSpan="2" x:Name="tbStatus" Canvas.Left="-131" Loaded="tbStatus_Loaded">
+                            <TextBlock.Resources>
+                                <Storyboard x:Key="slide">
+                                    <DoubleAnimation From="0" To="{Binding Width, ElementName=tbStatus}" Duration="00:00:10"
+                                                     Storyboard.TargetProperty="X" Storyboard.TargetName="transferCurreny" RepeatBehavior="Forever"/>
+                                </Storyboard>
+                            </TextBlock.Resources>
+                            <TextBlock.RenderTransform>
+                                <TranslateTransform x:Name="transferCurreny" X="0"/>
+                            </TextBlock.RenderTransform>
+                            <TextBlock.Triggers>
+                                <EventTrigger RoutedEvent="TextBlock.Loaded">
+                                    <BeginStoryboard Storyboard="{StaticResource slide}" />
+                                </EventTrigger>
+                            </TextBlock.Triggers>
+                        </TextBlock>-->
                     </Grid>
                 </Grid>
             </Border>
-            <ListView Background="#ffebeae5" BorderThickness="0" Grid.Row="1" 
-                      Name="lvwMessages" SizeChanged="lvwMessages_SizeChanged" 
+            <ListView BorderThickness="0" Grid.Row="1" 
+                      Name="lvwMessages" SizeChanged="lvwMessages_SizeChanged" extensions:ListViewExtensions.AutoScrollToEnd="True" 
                       Foreground="Black" ItemsSource="{Binding Path = Messages}" IsTextSearchEnabled="False">
+                
+                <ListView.Background>
+                    <ImageBrush ImageSource="Images/WhatsApp-Wallpaper.jpg" Stretch="Fill" TileMode="Tile"></ImageBrush>
+                </ListView.Background>
                 <ListView.GroupStyle>
                     <GroupStyle>
                         <GroupStyle.HeaderTemplate>
                             <DataTemplate>
-                                <TextBlock FontSize="11" Text="{Binding Path=Name, StringFormat='dd MMM yyyy hh:mm tt'}" HorizontalAlignment="Center" Foreground="#FF999999" Margin="8" />
+                                <Border CornerRadius ="10,10,10,10" Background="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0">
+                                    <TextBlock FontSize="10" Text="{Binding Path=Name, StringFormat='dd MMM yyyy hh:mm tt'}" HorizontalAlignment="Center" Foreground="DarkGray" Margin="8" />
+                                </Border>
                             </DataTemplate>
                         </GroupStyle.HeaderTemplate>
                     </GroupStyle>
@@ -207,17 +252,27 @@
                                             <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
                                         <Grid>
+                                            <Grid.Resources>
+                                                <converters:SwitchConverter x:Key="msgStatusIcon">
+                                                    <converters:SwitchConverterCase When="Sent" Then="Images/msg_unsent.png" />
+                                                    <converters:SwitchConverterCase When="DeliveredToServer" Then="Images/msg_deliveredserver.png" />
+                                                    <converters:SwitchConverterCase When="DeliveredToClient" Then="Images/msg_deliveredclient.png" />
+                                                </converters:SwitchConverter>
+                                            </Grid.Resources>
                                             <!--<Border Background="White" CornerRadius="8" Padding="8" Margin="8,0,0,0" BorderThickness="1" BorderBrush="Silver">-->
-                                            <Border Background="{Binding Path=BackgroundValue}"
-                                                    CornerRadius="{Binding Path=CornerRadiusValue}" 
+                                            <Border Background="{Binding MessageType, Converter={StaticResource messageTypeToColorBrushConverter}}"
+                                                    CornerRadius="{Binding MessageType, Converter={StaticResource messageTypeToCornerRadiusConverter}}" 
                                                     Padding="8" 
-                                                    Margin="{Binding Path=MarginValue}"
-                                                    BorderThickness="1" 
+                                                    Margin="{Binding MessageType, Converter={StaticResource messageTypeToMarginThicknessConverter}}"
+                                                    BorderThickness="{Binding MessageType, Converter={StaticResource messageTypeToBorderThicknessConverter}}" 
                                                     BorderBrush="Silver" >
                                                 <DockPanel>
-                                                    <TextBlock  DockPanel.Dock="Top" FontSize="10"  VerticalAlignment="Top" Padding="0,0,0,1" Text="{Binding MessageHeader}" Foreground="Gray" HorizontalAlignment="Stretch" Visibility="{Binding Path=GroupMessage, Converter={StaticResource booleanToVisibilityConverter}}"></TextBlock>
+                                                    <TextBlock  DockPanel.Dock="Top" FontSize="10"  VerticalAlignment="Top" Padding="0,0,0,1" Text="{Binding Path=FromInfo}" Foreground="Gray" HorizontalAlignment="Stretch" Visibility="{Binding Path=GroupMessage, Converter={StaticResource booleanToVisibilityConverter}}"></TextBlock>
                                                     <controls:SearchableTextBlock Text="{Binding Text}" SearchText="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Window}, Path=DataContext.SearchText}" DockPanel.Dock="Top" />
-                                                    <TextBlock DockPanel.Dock="Bottom" FontSize="10"  VerticalAlignment="Bottom" Padding="0,0,0,1" Text="{Binding Time, StringFormat='hh:mm'}" Foreground="Gray" HorizontalAlignment="Right" TextWrapping="Wrap"></TextBlock>
+                                                    <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal">
+                                                        <TextBlock DockPanel.Dock="Bottom" FontSize="10"  VerticalAlignment="Bottom" Padding="0,0,0,1" Text="{Binding Time, StringFormat='hh:mm'}" Foreground="Gray" HorizontalAlignment="Right" TextWrapping="Wrap"></TextBlock>
+                                                        <Image Source="{Binding MessageStatus, Converter={StaticResource msgStatusIcon}}" VerticalAlignment="Center" HorizontalAlignment="Right" Width="14" Height="9" Stretch="Uniform" Margin="2,0,0,0" Visibility="{Binding MessageType, Converter={StaticResource messageTypeToVisibilityConverter}}"/>
+                                                    </StackPanel>
                                                 </DockPanel>
                                             </Border>
                                         </Grid>
@@ -228,14 +283,14 @@
                     </GridView>
                 </ListView.View>
             </ListView>
-            <Grid Grid.Row="2" VerticalAlignment = "Stretch"  HorizontalAlignment = "Stretch" Height="50" Visibility="{Binding Path=IsTwoWay}" >
+            <Grid Grid.Row="2" VerticalAlignment = "Stretch"  HorizontalAlignment = "Stretch" Height="50" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition Width="50"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <TextBox Name="txtChatMessage" Grid.Column="0" HorizontalAlignment = "Stretch" VerticalAlignment = "Stretch" KeyUp="txtChatMessage_KeyUp" Visibility="Visible" TextWrapping="Wrap" AcceptsReturn="True">
                 </TextBox>
-                <Button Name="btnSendChat" Grid.Column="1"  Click="btnSendChat_Click" VerticalAlignment = "Stretch" HorizontalAlignment="Stretch" Visibility="{Binding Path=IsTwoWay,Mode=OneWay}">Send</Button>
+                <Button Name="btnSendChat" Grid.Column="1"  Click="btnSendChat_Click" VerticalAlignment = "Stretch" HorizontalAlignment="Stretch" >Send</Button>
             </Grid>
         </Grid>
 

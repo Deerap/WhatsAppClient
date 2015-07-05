@@ -70,12 +70,17 @@ namespace Whatsapp.Desktop.Business
 
         public RosterItem Get(string jid)
         {
-            return this.Items.FirstOrDefault<RosterItem>(i => i.JID == jid);
+            return this.Items.FirstOrDefault<RosterItem>(i => i.Jid == jid);
         }
 
         public bool Contains(string jid)
         {
-            return this.Items.Any(item => item.JID == jid);
+            return this.Items.Any(item => item.Jid == jid);
+        }
+
+        public void Remove(RosterItem rosterItem)
+        {
+            this.Items.Remove(rosterItem);
         }
     }
 }

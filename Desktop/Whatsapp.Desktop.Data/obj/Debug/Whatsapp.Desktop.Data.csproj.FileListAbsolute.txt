@@ -25,3 +25,17 @@ C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data
 C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\obj\Debug\Whatsapp.Desktop.Data.csprojResolveAssemblyReference.cache
 C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\obj\Debug\Whatsapp.Desktop.Data.dll
 C:\Pradeep\Development\GitHub\repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\obj\Debug\Whatsapp.Desktop.Data.pdb
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\bin\Debug\Whatsapp.Desktop.Data.dll.config
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\bin\Debug\Whatsapp.Desktop.Data.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\bin\Debug\Whatsapp.Desktop.Data.pdb
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\bin\Debug\EntityFramework.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\bin\Debug\System.Data.SQLite.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\bin\Debug\EntityFramework.xml
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\bin\Debug\System.Data.SQLite.xml
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\obj\Debug\Whatsapp.Desktop.Data.csprojResolveAssemblyReference.cache
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\obj\Debug\Whatsapp.Desktop.Data.dll
+E:\Development\Git\Repos\WhatsAppClient\Desktop\Whatsapp.Desktop.Data\obj\Debug\Whatsapp.Desktop.Data.pdb

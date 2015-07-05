@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedWindowsControls", "ExtendedWindowsControls\ExtendedWindowsControls.csproj", "{EF9D9A9B-C739-4606-B1EF-4F662DCF5EF9}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whatsapp.Desktop.Presentation", "Whatsapp.Desktop.Presentation\Whatsapp.Desktop.Presentation.csproj", "{1AA94D7C-646D-4F42-B4AD-2B2162750D3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Whatsapp.Desktop.Data", "Whatsapp.Desktop.Data\Whatsapp.Desktop.Data.csproj", "{7525669C-DED8-4E64-A28F-070D56872133}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creatives Source", "Creatives Source", "{ADBA140D-6D70-42E0-A0A5-E1BD0E144EC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -74,5 +76,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF9D9A9B-C739-4606-B1EF-4F662DCF5EF9} = {ADBA140D-6D70-42E0-A0A5-E1BD0E144EC7}
 	EndGlobalSection
 EndGlobal

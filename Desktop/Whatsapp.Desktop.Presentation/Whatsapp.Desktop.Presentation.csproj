@@ -53,7 +53,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Images\app.ico</ApplicationIcon>
+    <ApplicationIcon>Images\appicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -77,23 +77,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddContact.xaml.cs">
+      <DependentUpon>AddContact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Extensions\ListViewExtensions.cs" />
     <Compile Include="Controls\SearchableTextBlock.cs" />
-    <Compile Include="Converters\MessageDirectionToColorBrushConverter.cs" />
+    <Compile Include="Converters\MessageTypeToBorderThicknessConverter.cs" />
+    <Compile Include="Converters\MessageTypeToColorBrushConverter.cs" />
     <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\MessageTypeToCornerRadiusConverter.cs" />
+    <Compile Include="Converters\MessageTypeToMarginThicknessConverter.cs" />
+    <Compile Include="Converters\MessageTypeToVisibilityConverter.cs" />
     <Compile Include="Converters\ReverseBooleanToVisibilityConverter.cs" />
     <Compile Include="Converters\StringToXamlConverter.cs" />
+    <Compile Include="Converters\SwitchConverter.cs" />
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controls\Watermark\WatermarkAdorner.cs" />
     <Compile Include="Controls\Watermark\WatermarkService.cs" />
-    <Compile Include="Resources\Resource1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resource1.resx</DependentUpon>
-    </Compile>
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\ViewModel.cs" />
+    <Page Include="AddContact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -132,10 +140,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Resource1.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
@@ -146,9 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\search.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\add.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\delete.png" />
@@ -196,12 +198,37 @@
     <Resource Include="Images\whatsapp-plus-android.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\app.ico" />
+    <Resource Include="Images\WhatsApp-Wallpaper.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\app.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <Resource Include="Images\msg_unsent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\msg_deliveredserver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\msg_deliveredclient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\add_person_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\appicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ic_action_add_person_shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\appicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ic_menu_delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

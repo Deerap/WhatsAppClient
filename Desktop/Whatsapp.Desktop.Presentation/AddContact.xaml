@@ -1,0 +1,52 @@
+﻿<Window x:Class="Whatsapp.Desktop.Presentation.AddContact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Contact" Height="200" Width="300" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/background.jpg"></ImageBrush>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+                 <Image Source="Images/ic_action_add_person_shadow.png" Stretch="None" HorizontalAlignment="Left"></Image>
+                 <Label HorizontalAlignment="Stretch" Content="Enter Contact Information" FontWeight="SemiBold" Foreground="White" VerticalAlignment="Center"></Label>
+             </StackPanel>
+        
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Row="0" Grid.Column="0" Content="Number:" Height="28" HorizontalAlignment="Center" Name="lblPhone" VerticalAlignment="Center" Foreground="White" ></Label>
+            <TextBox Grid.Row="0" Grid.Column="1" Height="28" HorizontalAlignment="Stretch" Name="txtNumber" Margin="0,0,10,0" VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Name:" Height="28" HorizontalAlignment="Center" Name="lblName" VerticalAlignment="Center" Foreground="White" ></Label>
+            <TextBox Grid.Row="1" Grid.Column="1" Height="28" HorizontalAlignment="Stretch" Name="txtName"  Margin="0,0,10,0" VerticalAlignment="Center" VerticalContentAlignment="Center" />
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            
+            <Button Grid.Column="0" Content="Save" Height="28" Margin="0,0,0,0" Name="btnSaveContact" Width="100" Click="btnSaveContact_Click" IsDefault="True" />
+           <Button Grid.Column="1" Content="Cancel" Height="28" Margin="0,0,0,0" Name="btnCancel" Width="100" Click="btnCancel_Click"   />
+            
+        </Grid>
+    </Grid>
+    
+</Window>

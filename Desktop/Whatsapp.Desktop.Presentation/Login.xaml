@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Whatsapp.Desktop.Presentation.Login"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Sign In" Height="300" Width="650" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+        Title="Sign In" Height="300" Width="650" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="315"></ColumnDefinition>
@@ -24,14 +24,9 @@
                 <MenuItem Header="_About Whatsapp"></MenuItem>
             </MenuItem>
         </Menu>
-        <Image Grid.Row="1" Margin="100,50,100,50" Name="imgLogo" Stretch="Uniform"  Source="/Whatsapp.Desktop.Presentation;component/Images/whatsapp-plus-android.png" />
-        <Grid Grid.Column="1" Grid.Row="1">
-            <Grid.Background>
-                <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
-                    <GradientStop Color="DarkCyan" Offset="0"/>
-                    <GradientStop Color="DarkCyan" Offset="0.9"/>
-                </LinearGradientBrush>
-            </Grid.Background>
+        <Image Grid.Row="1" Margin="100,50,100,50" Name="imgLogo" Stretch="None"  Source="/Whatsapp.Desktop.Presentation;component/Images/icon.png" />
+        <Grid Grid.Column="1" Grid.Row="1" Background="#075E55">
+           
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition Height="28"></RowDefinition>
@@ -39,22 +34,22 @@
                 <RowDefinition Height="28"></RowDefinition>
                 <RowDefinition Height="16"></RowDefinition>
                 <RowDefinition Height="28"></RowDefinition>
-                <RowDefinition Height="50"></RowDefinition>
-                <RowDefinition Height="40"></RowDefinition>
-                <RowDefinition Height="16"></RowDefinition>
+                <RowDefinition Height="10"></RowDefinition>
+                <RowDefinition Height="90"></RowDefinition>
+                <RowDefinition Height="10"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition Width="300"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Label Content="Mobile:" Grid.Row="1" Grid.Column="1" Height="28" HorizontalAlignment="Left" Name="lblMobile" VerticalAlignment="Top" Foreground="White" />
+            <Label Content="Number:" Grid.Row="1" Grid.Column="1" Height="28" HorizontalAlignment="Left" Name="lblPhone" VerticalAlignment="Top" Foreground="White" />
             <Label Content="Password:" Grid.Row="3" Grid.Column="1" Height="28" HorizontalAlignment="Left" Name="lblPassword" VerticalAlignment="Top" Foreground="White" />
             <TextBox Grid.Row="1" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="80,0,0,0" Name="txtMobile" VerticalAlignment="Top" Width="200" VerticalContentAlignment="Center" />
             <PasswordBox Grid.Column="1" Grid.Row="3" Height="28" HorizontalAlignment="Left" Margin="80,0,0,0" Name="txtPassword" VerticalAlignment="Top" Width="200" VerticalContentAlignment="Center" />
-            <Button Grid.Column="1" Grid.Row="5" Content="Log In" Height="28" Margin="60,0,0,0" Name="cmdSignIn" Width="200" Click="cmdSignIn_Click" IsDefault="True" />
+            <Button Grid.Column="1" Grid.Row="5" Content="Sign In" Height="28" Margin="60,0,0,0" Name="cmdSignIn" Width="200" Click="cmdSignIn_Click" IsDefault="True" />
 
-            <TextBlock VerticalAlignment="Stretch" HorizontalAlignment="Stretch" TextWrapping="WrapWithOverflow" x:Name="lblStatus" Grid.Row="7" Grid.Column="1" Height="28" Text="{Binding Path=Status,Mode=OneWay}" Foreground="White"></TextBlock>
+            <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Stretch" TextWrapping="WrapWithOverflow" x:Name="lblStatus" Grid.Row="7" Grid.Column="1" Height="28" Text="{Binding Path=Status,Mode=OneWay}" Foreground="White"></TextBlock>
 
         </Grid>
 

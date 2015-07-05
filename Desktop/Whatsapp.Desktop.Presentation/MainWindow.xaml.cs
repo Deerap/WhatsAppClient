@@ -9,8 +9,8 @@ using Whatsapp.Desktop.Presentation.ViewModels;
 using System.IO;
 using System.ComponentModel;
 using System.Drawing;
-using Whatsapp.Desktop.Presentation.Resources;
 using Whatsapp.Desktop.Business.Enumerations;
+using System.Collections.Specialized;
 
 namespace Whatsapp.Desktop.Presentation
 {
@@ -24,6 +24,10 @@ namespace Whatsapp.Desktop.Presentation
         //private List<MainNotifyWindow> lstNotificationWindows;
         //System.Windows.Forms.NotifyIcon ni;
 
+        //private void tbStatus_Loaded(object sender, RoutedEventArgs e)
+        //{
+        //    tbStatus.Width = tbStatus.ActualWidth;
+        //}
 
         public MainWindow()
         {
@@ -54,7 +58,7 @@ namespace Whatsapp.Desktop.Presentation
         {
             try
             {
-                MessageBox.Show("Some error has occured in MiWavez and application cannot continue.Please contact the Administrator?");
+                MessageBox.Show("Some error has occured in WhatsApp and application cannot continue.Please contact the Administrator!");
                 Application.Current.Shutdown();
             }
             catch (Exception)
@@ -132,9 +136,10 @@ namespace Whatsapp.Desktop.Presentation
         {
             try
             {
-                rsItemBase current = rosterItem as rsItemBase;
+                RosterItem current = rosterItem as RosterItem;
                 MainWindowViewModel currentModel = (MainWindowViewModel)sender;
 
+                
                 //MainNotifyWindow nWindow = null;
 
                 //if (this.WindowState == System.Windows.WindowState.Minimized)
@@ -173,14 +178,7 @@ namespace Whatsapp.Desktop.Presentation
         {
             try
             {
-
-                if (txtChatMessage.Text.Trim() != string.Empty)
-                {
-                    rsItemBase currentRosterItem = rsRoster.Instance.Get(rsRoster.Instance.SelectedItem.Jid);
-                    currentRosterItem.Add(new rsMessage() { Text = txtChatMessage.Text, Time = DateTime.Now, Direction = MessageDirection.Outgoing });
-                    client.SendMessage(currentRosterItem.Jid, txtChatMessage.Text);
-                    txtChatMessage.Clear();
-                }
+                sendMessage();
             }
             catch (Exception)
             {
@@ -194,13 +192,7 @@ namespace Whatsapp.Desktop.Presentation
             {
                 if (e.Key == Key.Enter)
                 {
-                    if (txtChatMessage.Text.Trim() != string.Empty)
-                    {
-                        rsItemBase currentRosterItem = rsRoster.Instance.Get(rsRoster.Instance.SelectedItem.Jid);
-                        currentRosterItem.Add(new rsMessage() { Text = txtChatMessage.Text, Time = DateTime.Now, Direction= MessageDirection.Outgoing});
-                        client.SendMessage(currentRosterItem.Jid, txtChatMessage.Text);
-                        txtChatMessage.Clear();
-                    }
+                    sendMessage();
                 }
             }
             catch (Exception)
@@ -226,6 +218,41 @@ namespace Whatsapp.Desktop.Presentation
         {
             //if (this.WindowState == System.Windows.WindowState.Minimized)
             //    this.Hide();
+        }
+
+        private void sendMessage()
+        {
+            if (txtChatMessage.Text.Trim() != string.Empty)
+            {
+                RosterItem currentRosterItem = Roster.Instance.Get(Roster.Instance.SelectedItem.Jid);
+                var msg = new Message() { Text = txtChatMessage.Text, Time = DateTime.Now, MessageType = MessageType.Outgoing, MessageStatus= MessageStatus.Sent };
+                string msgID = client.SendMessage(currentRosterItem.Jid, txtChatMessage.Text);
+                msg.ID = msgID.Substring(7, msgID.IndexOf(',') - 7);
+                currentRosterItem.Add(msg);
+                txtChatMessage.Clear();
+            }
+        }
+
+        private void btnAddContact_Click(object sender, RoutedEventArgs e)
+        {
+            AddContact window = new AddContact()
+            {
+                Title = "Add Contact",
+                ShowInTaskbar = false,               
+                Topmost = true,                      
+                ResizeMode = ResizeMode.NoResize,    
+                WindowStyle= System.Windows.WindowStyle.None,
+                Owner = Application.Current.MainWindow
+            };
+
+
+            window.ShowDialog();
+        }
+
+        private void btnRemoveContact_Click(object sender, RoutedEventArgs e)
+        {
+            if (Roster.Instance.SelectedItem != null)
+                Roster.Instance.Remove(Roster.Instance.SelectedItem);
         }
     }
 }
