@@ -132,7 +132,7 @@ namespace Whatsapp.Desktop.Business
 
         void client_OnGetPresence(string from, string type)
         {
-            if(from.Contains("9049080491"))
+            if(from.Contains("<YourNumber>"))//self presence..
                 return;
 
             if (String.IsNullOrEmpty(type))
